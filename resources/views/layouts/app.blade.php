@@ -13,6 +13,7 @@
     {{--    <link rel="stylesheet" href="assets/css/app.css">--}}
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" type='image/x-icon'>
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
+    @stack('styles')
 </head>
 <body>
 <div id="app">
@@ -24,6 +25,7 @@
         </div>
         @include('layouts.partials.footer')
     </div>
+    @stack('scripts')
 </div>
 {{--    <script src="assets/js/feather-icons/feather.min.js"></script>--}}
 {{--    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>--}}

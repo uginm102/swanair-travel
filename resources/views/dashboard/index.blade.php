@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@push('styles')
+    @vite('resources/css/Chart.min.css')
+@endpush
 @section('content')
     <div class="page-title">
         <h3>Dashboard</h3>
@@ -281,3 +284,9 @@
     </section>
     </div>
 @endsection
+
+@push('scripts')
+    @vite('resources/js/Chart.bundle.min.js')
+    @vite('resources/js/apexcharts.min.js')
+    @vite('resources/js/pages/dashboard.js')
+@endpush
